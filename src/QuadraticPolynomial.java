@@ -44,10 +44,11 @@ public class QuadraticPolynomial {
 //    should return a double value representing the result of evaluating the target polynomial at x.
 //    See the test below for an example of how the eval method should work.  Here is a template for the eval method:
     
-//    public double eval(double x) {
-//        // YOUR CODE HERE
-//        return 0; // Temporarily returns 0 to avoid compiler error
-//    }
+    public double eval(double x) {
+        // YOUR CODE HERE
+    	
+        return a*x*x+ b*x+c; // Temporarily returns 0 to avoid compiler error
+    }
     
 //    //Question #5
 //    Add another instance method to calculate the discriminant of a polynomial ax^2+ bx + c,
@@ -55,9 +56,10 @@ public class QuadraticPolynomial {
 //    The method MUST NOT take any explicit parameters and should return a value of type double. 
 //    Here is a template for the method:
     
-//    public double discriminant() {
-//        return 0; // Temporarily return 0 to avoid compiler error
-//    }
+    public double discriminant() {
+    	
+        return b*b-4*(a*c); // Temporarily return 0 to avoid compiler error
+    }
     
 //    //Question #6
 //    Add a method named scale that returns a new QuadraticPolynomial object 
@@ -65,17 +67,19 @@ public class QuadraticPolynomial {
 //    The target polynomial should not be modified.
 //    As a start you may use the following method template:
     
-//    public QuadraticPolynomial scale(double scalar) {
-//        return ???; 
-//    }
+    public QuadraticPolynomial scale(double scalar) {
+    	
+        return new QuadraticPolynomial(a*(scalar),b*(scalar),c*(scalar)); 
+    }
     
 //    //Question #7
 //    Add a method named add that returns a new QuadraticPolynomial object resulting form the addition of the target object 
 //    to an a second polynomial passed to the method as an explicit parameter of type QuadraticPolynomial .
 //    As a start you may use the following method template:
     
-//    public QuadraticPolynomial add(QuadraticPolynomial p) {
-//        return ???;
-//    }
+    public QuadraticPolynomial add(QuadraticPolynomial p) {
+    	
+        return new QuadraticPolynomial(this.a+p.getA(), this.b+p.getB(),this.c+p.getC()) ;
+    }
      
 }
