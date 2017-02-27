@@ -19,17 +19,17 @@ public class QuadraticPolynomialTester {
         assertEquals("constructorTest1: Wrong constant coefficient", 3.0, p1.getC(), 1e-10);
     }
     
-//    @Test //Question #3
-//    public void constructorTest2 () {
-//        QuadraticPolynomial p2 = new QuadraticPolynomial(1.0);
-//        assertEquals("constructorTest2: Wrong quadratic coefficient", 1.0, p2.getA(), 1e-10);
-//        assertEquals("constructorTest2: Wrong linear coefficient", 1.0, p2.getB(), 1e-10);
-//        assertEquals("constructorTest2: Wrong constant coefficient", 1.0, p2.getC(), 1e-10);
-//        QuadraticPolynomial p3 = new QuadraticPolynomial(2.0);
-//        assertEquals("constructorTest2: Wrong quadratic coefficient", 2.0, p3.getA(), 1e-10);
-//        assertEquals("constructorTest2: Wrong linear coefficient", 2.0, p3.getB(), 1e-10);
-//        assertEquals("constructorTest2: Wrong constant coefficient", 2.0, p3.getC(), 1e-10);
-//    }
+    @Test //Question #3
+    public void constructorTest2 () {
+        QuadraticPolynomial p2 = new QuadraticPolynomial(1.0);
+        assertEquals("constructorTest2: Wrong quadratic coefficient", 1.0, p2.getA(), 1e-10);
+        assertEquals("constructorTest2: Wrong linear coefficient", 1.0, p2.getB(), 1e-10);
+        assertEquals("constructorTest2: Wrong constant coefficient", 1.0, p2.getC(), 1e-10);
+        QuadraticPolynomial p3 = new QuadraticPolynomial(2.0);
+        assertEquals("constructorTest2: Wrong quadratic coefficient", 2.0, p3.getA(), 1e-10);
+        assertEquals("constructorTest2: Wrong linear coefficient", 2.0, p3.getB(), 1e-10);
+        assertEquals("constructorTest2: Wrong constant coefficient", 2.0, p3.getC(), 1e-10);
+    }
     
 //    @Test //Question #4
 //    public void evalTest () {
